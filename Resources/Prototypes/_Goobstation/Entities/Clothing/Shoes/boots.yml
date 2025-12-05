@@ -284,3 +284,36 @@
         Blunt: 0.95
         Slash: 0.95
         Piercing: 0.95
+
+- type: entity
+  parent: [ClothingShoesBase, PowerCellSlotSmallItem]
+  id: ClothingShoesBootsJump
+  name: jump boots
+  description: Advanced boots with powerful thrusters that allow you to dash forward quickly, even over chasms and obstacles!
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Shoes/Boots/jumpboots.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Shoes/Boots/jumpboots.rsi
+  - type: ClothingGrantComponent
+    component:
+    - type: ActionGrant
+      actions:
+      - ActionJumpBootsDash
+  - type: StaticPrice
+    price: 750
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 400
+      Plastic: 300
+      Silver: 150
+  - type: ModifyStandingUpTime
+    multiplier: 0.8
+  - type: NoSlip

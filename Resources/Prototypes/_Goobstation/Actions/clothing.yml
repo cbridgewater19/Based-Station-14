@@ -45,3 +45,24 @@
       sprite: Mobs/Silicon/station_ai.rsi
       state: default
     event: !type:CloneProjectorActivatedEvent {}
+
+- type: entity
+  id: ActionJumpBootsDash
+  name: Jump Dash
+  description: Dash forward quickly, allowing you to jump over chasms!
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: WorldTargetAction
+    checkCanAccess: false
+    range: 0
+    useDelay: 3
+    icon: { sprite: _Goobstation/Clothing/Shoes/Boots/jumpboots.rsi, state: icon }
+    itemIconStyle: NoItem
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Effects/thudswoosh.ogg
+      params:
+        volume: 2
+    event: !type:DashActionEvent
+      distance: 5.5
+      speed: 12
+      needsGravity: false
