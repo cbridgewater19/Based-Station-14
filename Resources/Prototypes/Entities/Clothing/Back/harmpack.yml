@@ -1,0 +1,29 @@
+# SPDX-FileCopyrightText: 2025 Based Station
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  parent: Clothing
+  id: ClothingHarmPack
+  name: H.A.R.M.P.A.C.K
+  description: A Hands Augmentation and Remote Manipulation Pack. Provides an extra set of hands that can be swapped between using Alt+X.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Backpacks/harmpack.rsi
+    state: icon
+  - type: Item
+    size: Huge
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+  - type: UseDelay
+    delay: 0.5
+  - type: HarmPack
+    isActive: false
+    extraHandNames:
+    - harm_left
+    - harm_right
+    showExtraHands: true
+    swapCooldown: 0.5
+    nextSwapTime: 0
