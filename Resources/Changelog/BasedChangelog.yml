@@ -1,0 +1,57 @@
+Name: Basedlog
+Order: -1
+Entries:
+  - author: boy
+    changes:
+      - type: Tweak
+        message: Wideswing damage cut in half, left clicking does more damage now.
+    id: 1
+    time: '2025-08-21T12:54:44.0000000+00:00'
+  - author: boy
+    changes:
+      - type: Add
+        message: Abductors now spawn with death acidifiers.
+    id: 2
+    time: '2025-08-21T12:54:44.0000000+00:00'
+  - author: boy
+    changes:
+      - type: Tweak
+        message: Abductor IFF console is now a syndicate IFF console.
+    id: 3
+    time: '2025-08-21T12:54:44.0000000+00:00'
+  - author: NotImportant
+    changes:
+      - type: Tweak
+        message: Heretics and Changelings are once again convertable by Head Revolutionaries.
+    id: 4
+    time: '2025-08-21T12:54:44.0000000+00:00'
+  - author: boy
+    changes:
+      - type: Add
+        message: Readded Telecrystal Miners to the game.
+    id: 5
+    time: '2025-08-21T12:54:44.0000000+00:00'
+  - author: NotImportant
+    changes:
+      - type: Tweak
+        message: Binglemind messages should now show up in english.
+    id: 6
+    time: '2025-08-21T12:54:44.0000000+00:00'
+  - author: NotImportant
+    changes:
+      - type: Tweak
+        message: Buffed most changeling chitinous armor values from 45% to 55%.
+    id: 7
+    time: '2025-09-16T10:45:44.0000000+00:00'
+  - author: NotImportant
+    changes:
+      - type: Add
+        message: Added Lone Nuclear Operative to Ninja communication console threats.
+    id: 8
+    time: '2025-09-25T12:41:44.0000000+00:00'
+  - author: NotImportant
+    changes:
+      - type: Add
+        message: Added a new gamemode preset to the vote named "POSTAL", which is basically All at Once.
+    id: 9
+    time: '2025-09-27T15:35:44.0000000+00:00'

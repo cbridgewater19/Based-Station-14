@@ -1,0 +1,241 @@
+# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 2022 Lamrr <96937466+Lamrr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Flareguy <78941145+Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
+# SPDX-FileCopyrightText: 2023 Puro <103608145+PuroSlavKing@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 ar4ill <122553891+ar4ill@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 lzk228 <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 mhamster <81412348+mhamsterr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 potato1234_x <79580518+potato1234x@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+ - type: entity
+   id: WardrobePrisonFilled
+   suffix: Filled
+   parent: WardrobePrison
+   description: "Contains a selection of nice orange clothes for people enjoying their stay in the brig."
+   components:
+   - type: StorageFill
+     contents:
+       - id: ClothingUniformJumpsuitPrisoner
+         amount: 2
+       - id: ClothingUniformJumpskirtPrisoner
+         amount: 2
+       - id: ClothingShoesColorBlack
+         amount: 2
+       - id: ClothingMaskMuzzle
+
+#- type: entity
+#  id: WardrobePajamaFilled
+#  suffix: Filled
+#  parent: WardrobeWhite
+#  name: pajama wardrobe
+
+ - type: entity
+   id: WardrobeRoboticsFilled
+   suffix: Filled
+   parent: WardrobeRobotics
+   description: "You can build a robot out of this locker."
+   components:
+   - type: StorageFill
+     contents:
+     - id: ClothingOuterCoatRobo
+       amount: 2
+     - id: ClothingUniformJumpsuitRoboticist
+     - id: ClothingUniformJumpskirtRoboticist
+     - id: ClothingShoesColorBlack
+       amount: 2
+     - id: ClothingHandsGlovesFingerless
+       amount: 2
+
+ - type: entity
+   id: WardrobeChemistryFilled
+   suffix: Filled
+   parent: WardrobeChemistry
+   description: "The sleek orange threads contained within make you much less likely to be thrown out of the chemistry lab."
+   components:
+   - type: StorageFill
+     contents:
+       - id: ClothingUniformJumpsuitChemistry
+       - id: ClothingBackpackChemistry
+       - id: ClothingShoesColorWhite
+       - id: ClothingOuterCoatLabChem
+       - id: ClothingUniformJumpskirtChemistry
+
+ - type: entity
+   id: WardrobeGeneticsFilled
+   suffix: Filled
+   parent: WardrobeGenetics
+   description: "The sleek blue threads contained within make you much less likely to be thrown out of the genetics lab."
+   components:
+   - type: StorageFill
+     contents:
+       - id: ClothingUniformJumpsuitGenetics
+       - id: ClothingBackpackGenetics
+       - id: ClothingShoesColorWhite
+       - id: ClothingOuterCoatLabGene
+       - id: ClothingUniformJumpskirtGenetics
+
+ - type: entity
+   id: WardrobeVirologyFilled
+   suffix: Filled
+   parent: WardrobeVirology
+   description: "The sleek green threads contained within make you much less likely to be thrown out of the virology lab."
+   components:
+   - type: StorageFill
+     contents:
+       - id: ClothingUniformJumpsuitVirology
+       - id: ClothingBackpackVirology
+       - id: ClothingShoesColorWhite
+       - id: ClothingOuterCoatLabViro
+       - id: ClothingUniformJumpskirtVirology
+
+ - type: entity
+   id: WardrobeScienceFilled
+   suffix: Filled
+   parent: WardrobeScience
+   description: "You've read a couple pop science articles, now it's time for the real deal."
+   components:
+   - type: StorageFill
+     contents:
+       - id: ClothingUniformJumpsuitScientist
+       - id: ClothingBackpackScience
+       - id: ClothingShoesColorWhite
+       - id: ClothingOuterCoatRnd
+       - id: ClothingUniformJumpskirtScientist
+       - id: ClothingEyesGlasses
+         prob: 0.5
+       - id: CrowbarRed #The jojoke - hit video game Half-Life
+         prob: 0.1
+
+
+ - type: entity
+   id: WardrobeBotanistFilled
+   suffix: Filled
+   parent: WardrobeBotanist
+   description: "Plant yourself among the plant men with these 100% natural plant-derived clothes."
+   components:
+   - type: StorageFill
+     contents:
+       - id: ClothingUniformJumpsuitHydroponics
+       - id: ClothingBackpackHydroponics
+       - id: ClothingShoesColorBrown
+       - id: ClothingOuterApronBotanist
+       - id: ClothingUniformJumpskirtHydroponics
+       - id: ClothingUniformOveralls
+       - id: ClothingHeadHatTrucker #the hat itself is a subtle joke
+         prob: 0.15
+       - id: ClothingHandsGlovesLeather
+         prob: 0.5
+
+ - type: entity
+   id: WardrobeMedicalDoctorFilled
+   suffix: Filled
+   parent: WardrobeMedicalDoctor
+   description: "We've all played doctor before, now practice medicine."
+   components:
+   - type: StorageFill
+     contents:
+       - id: ClothingUniformJumpsuitMedicalDoctor
+       - id: ClothingBackpackMedical
+       - id: ClothingShoesColorWhite
+       - id: ClothingOuterCoatLab
+       - id: ClothingUniformJumpskirtMedicalDoctor
+       - id: ClothingHandsGlovesLatex
+         prob: 0.4
+       - id: ClothingEyesGlasses
+         prob: 0.3
+
+ - type: entity
+   id: WardrobeChapelFilled
+   suffix: Filled
+   parent: WardrobeChapel
+   description: "You have to look presentable for your flock."
+   components:
+   - type: StorageFill
+     contents: # todo chaplain backpack
+       - id: ClothingUniformJumpsuitChaplain
+       - id: ClothingShoesColorBlack
+       - id: ClothingUniformJumpskirtChaplain
+
+ - type: entity
+   id: WardrobeSecurityFilled
+   suffix: Filled
+   parent: WardrobeSecurity
+   description: "Cross the thin red line."
+   components:
+   - type: StorageFill
+     contents:
+       - id: ClothingUniformJumpsuitSec
+       - id: ClothingBackpackSecurity
+       - id: ClothingShoesBootsJack
+       - id: ClothingEyesGlassesSunglasses
+       - id: ClothingHeadHelmetBasic
+       - id: ClothingOuterArmorBasic
+       - id: ClothingUniformJumpskirtSec
+
+ - type: entity
+   id: WardrobeCargoFilled
+   suffix: Filled
+   parent: WardrobeCargo
+   description: "This locker? Maybe 500 spesos. Brotherhood? Priceless."
+   components:
+   - type: StorageFill
+     contents:
+       - id: ClothingHeadHatCargosoft
+       - id: ClothingUniformJumpsuitCargo
+       - id: ClothingBackpack
+       - id: ClothingShoesColorBlack
+       - id: ClothingUniformJumpskirtCargo
+       - id: ClothingHandsGlovesFingerless
+       - id: AppraisalTool
+
+ - type: entity
+   id: WardrobeSalvageFilled
+   suffix: Filled
+   parent: WardrobeSalvage
+   components:
+   - type: StorageFill
+     contents:
+       - id: ClothingBackpack
+       - id: ClothingShoesBootsSalvage
+         amount: 2
+       - id: ClothingUniformJumpsuitSalvageSpecialist
+         amount: 2
+
+ - type: entity
+   id: WardrobeAtmosphericsFilled
+   suffix: Filled
+   parent: WardrobeAtmospherics
+   description: "This locker contains a uniform for atmospheric technicians."
+   components:
+   - type: StorageFill
+     contents:
+       - id: ClothingUniformJumpsuitAtmos
+       - id: ClothingBackpackEngineering
+       - id: ClothingShoesColorWhite
+       - id: ClothingUniformJumpskirtAtmos
+
+ - type: entity
+   id: WardrobeEngineeringFilled
+   suffix: Filled
+   parent: WardrobeEngineering
+   description: "This locker contains a uniform for engineering or social engineering."
+   components:
+   - type: StorageFill
+     contents:
+       - id: ClothingHeadHatHardhatYellow
+       - id: ClothingUniformJumpsuitEngineering
+       - id: ClothingBackpackEngineering
+       - id: ClothingShoesBootsWork
+       - id: ClothingOuterVestHazard
+       - id: ClothingUniformJumpskirtEngineering

@@ -1,0 +1,297 @@
+# SPDX-FileCopyrightText: 2023 rosieposie <52761126+rosieposieeee@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Archylle <81660513+Archylle@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 inquisitor-star <81660513+inquisitor-star@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 inquisitor-star <thecatankha@gmail.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 2024 starch <starchpersonal@gmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 2025 keronshb <54602815+keronshb@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+#SOFTSUITS
+#Basic EVA
+- type: entity
+  id: SuitStorageEVA
+  parent: SuitStorageBase
+  suffix: EVA
+  components:
+  - type: StorageFill
+    contents:
+        - id: OxygenTankFilled
+        - id: NitrogenTankFilled
+        - id: ClothingOuterHardsuitEVA
+        - id: ClothingHeadHelmetEVA
+        - id: ClothingMaskBreath
+
+#Basic EVA (Big Ass Helmet)
+- type: entity
+  id: SuitStorageEVAAlternate
+  parent: SuitStorageBase
+  suffix: EVA, Large Helmet
+  components:
+  - type: StorageFill
+    contents:
+        - id: OxygenTankFilled
+        - id: NitrogenTankFilled
+        - id: ClothingOuterHardsuitEVA
+        - id: ClothingHeadHelmetEVALarge
+        - id: ClothingMaskBreath
+
+#Emergency EVA
+- type: entity
+  id: SuitStorageEVAEmergency
+  parent: SuitStorageBase
+  suffix: Emergency EVA
+  components:
+  - type: StorageFill
+    contents:
+        - id: OxygenTankFilled
+        - id: NitrogenTankFilled
+        - id: ClothingOuterSuitEmergency
+        - id: ClothingMaskBreath
+
+#Prisoner EVA
+- type: entity
+  id: SuitStorageEVAPrisoner
+  parent: SuitStorageBase
+  suffix: Prisoner EVA
+  components:
+  - type: StorageFill
+    contents:
+        - id: OxygenTankFilled
+        - id: NitrogenTankFilled
+        - id: ClothingOuterHardsuitEVAPrisoner
+        - id: ClothingHeadHelmetEVALarge
+        - id: ClothingMaskBreath
+
+#Syndicate EVA
+- type: entity
+  id: SuitStorageEVASyndicate
+  parent: SuitStorageBase
+  suffix: Syndicate EVA
+  components:
+  - type: StorageFill
+    contents:
+        - id: OxygenTankFilled
+        - id: NitrogenTankFilled
+        - id: ClothingOuterEVASuitSyndicate
+        - id: ClothingHeadHelmetSyndicate
+        - id: ClothingMaskGasSyndicate
+
+#Pirate EVA
+- type: entity
+  id: SuitStorageEVAPirate
+  parent: SuitStorageBase
+  suffix: Pirate EVA
+  components:
+  - type: StorageFill
+    contents:
+        - id: OxygenTankFilled
+        - id: NitrogenTankFilled
+        - id: ClothingOuterHardsuitPirateEVA
+        - id: ClothingMaskGas
+
+#NTSRA Voidsuit
+- type: entity
+  id: SuitStorageNTSRA
+  parent: SuitStorageBase
+  suffix: Ancient EVA
+  components:
+  - type: StorageFill
+    contents:
+        - id: JetpackVoidFilled
+        - id: ClothingOuterHardsuitAncientEVA
+        - id: ClothingHeadHelmetAncient
+        - id: ClothingMaskBreath
+
+#HARDSUITS
+#Engineering hardsuit
+- type: entity
+  id: SuitStorageEngi
+  parent: SuitStorageBase
+  suffix: Station Engineer
+  components:
+  - type: StorageFill
+    contents:
+        - id: OxygenTankFilled
+        - id: NitrogenTankFilled
+        - id: ClothingShoesBootsMag
+        - id: UndeterminedVoidsuitEngineer # Goob edit
+        - id: ClothingMaskBreath
+  - type: AccessReader
+    access: [["Engineering"]]
+
+#Atmospherics hardsuit
+- type: entity
+  id: SuitStorageAtmos
+  parent: SuitStorageBase
+  suffix: Atmospheric Technician
+  components:
+  - type: StorageFill
+    contents:
+        - id: OxygenTankFilled
+        - id: NitrogenTankFilled
+        - id: ClothingModsuitAtmostechPowerCell
+        - id: ClothingMaskBreath
+  - type: AccessReader
+    access: [["Atmospherics"]]
+
+#Security hardsuit
+- type: entity
+  id: SuitStorageSec
+  parent: SuitStorageBase
+  suffix: Security
+  components:
+  - type: StorageFill
+    contents:
+        - id: OxygenTankFilled
+        - id: NitrogenTankFilled
+        - id: UndeterminedVoidsuitSecurity # Goob edit
+        - id: ClothingMaskBreath
+  - type: AccessReader
+    access: [["Security"]]
+
+#CE's hardsuit
+- type: entity
+  id: SuitStorageCE
+  parent: SuitStorageBase
+  suffix: Chief Engineer
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: FillChiefEngineerHardsuit
+  - type: AccessReader
+    access: [["ChiefEngineer"]]
+
+#CMO's hardsuit
+- type: entity
+  id: SuitStorageCMO
+  parent: SuitStorageBase
+  suffix: Chief Medical Officer
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: FillChiefMedicalOfficerHardsuit
+  - type: AccessReader
+    access: [ [ "ChiefMedicalOfficer" ] ]
+
+#RD's hardsuit
+- type: entity
+  id: SuitStorageRD
+  parent: SuitStorageBase
+  suffix: Research Director
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: FillResearchDirectorHardsuit
+  - type: AccessReader
+    access: [ [ "ResearchDirector" ] ]
+
+#HOS's hardsuit
+- type: entity
+  id: SuitStorageHOS
+  parent: SuitStorageBase
+  suffix: Head of Security
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: FillHeadOfSecurityHardsuit
+  - type: AccessReader
+    access: [["HeadOfSecurity"]]
+
+#Warden's hardsuit
+- type: entity
+  id: SuitStorageWarden
+  parent: SuitStorageBase
+  suffix: Warden
+  components:
+  - type: StorageFill
+    contents:
+        - id: OxygenTankFilled
+        - id: NitrogenTankFilled
+        - id: ClothingOuterHardsuitWarden
+        - id: ClothingMaskBreath
+  - type: AccessReader
+    access: [["Armory"]]
+
+#Captain's hardsuit
+- type: entity
+  id: SuitStorageCaptain
+  parent: SuitStorageBase
+  suffix: Captain
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: FillCaptainHardsuit
+  - type: AccessReader
+    access: [["Captain"]]
+
+#Salvage hardsuit
+- type: entity
+  id: SuitStorageSalv
+  parent: SuitStorageBase
+  suffix: Salvage
+  components:
+  - type: StorageFill
+    contents:
+      - id: OxygenTankFilled
+      - id: NitrogenTankFilled
+      - id: ClothingShoesBootsMag
+      - id: ClothingOuterHardsuitSalvage #Goobstation
+      - id: ClothingMaskGasExplorer
+  - type: AccessReader
+    access: [["Salvage"]]
+
+#Blood-red hardsuit
+- type: entity
+  id: SuitStorageSyndie
+  parent: SuitStorageBase
+  suffix: Syndicate Hardsuit
+  components:
+  - type: StorageFill
+    contents:
+        - id: OxygenTankFilled
+        - id: NitrogenTankFilled
+        - id: ClothingOuterHardsuitSyndie
+        - id: ClothingShoesBootsMagSyndie
+        - id: ClothingMaskGasSyndicate
+
+#Pirate Captain's hardsuit
+- type: entity
+  id: SuitStoragePirateCap
+  parent: SuitStorageBase
+  suffix: Pirate Captain
+  components:
+  - type: StorageFill
+    contents:
+        - id: OxygenTankFilled
+        - id: NitrogenTankFilled
+        - id: ClothingOuterHardsuitPirateCap
+        - id: ClothingMaskGas
+
+#Wizard
+- type: entity
+  id: SuitStorageWizard
+  parent: SuitStorageBase
+  suffix: Wizard
+  components:
+  - type: StorageFill
+    contents:
+        - id: OxygenTankFilled
+        - id: NitrogenTankFilled
+        - id: ClothingOuterHardsuitWizard
+        - id: ClothingMaskBreath

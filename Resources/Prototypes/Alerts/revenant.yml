@@ -1,0 +1,36 @@
+# SPDX-FileCopyrightText: 2023 lapatison <100279397+lapatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: alert
+  id: Essence
+  category: Health #it's like ghostie health
+  icons:
+  - sprite: /Textures/Interface/Alerts/essence_counter.rsi
+    state: essence0
+  alertViewEntity: AlertEssenceSpriteView
+  name: alerts-revenant-essence-name
+  description: alerts-revenant-essence-desc
+
+- type: alert
+  id: Corporeal
+  icons: [ /Textures/Mobs/Ghosts/revenant.rsi/icon.png ]
+  name: alerts-revenant-corporeal-name
+  description: alerts-revenant-corporeal-desc
+
+- type: entity
+  id: AlertEssenceSpriteView
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: /Textures/Interface/Alerts/essence_counter.rsi
+    layers:
+    - map: [ "enum.AlertVisualLayers.Base" ]
+    - map: [ "enum.RevenantVisualLayers.Digit1" ]
+    - map: [ "enum.RevenantVisualLayers.Digit2" ]
+      offset: 0.125, 0
+    - map: [ "enum.RevenantVisualLayers.Digit3" ]
+      offset: 0.25, 0
