@@ -32,9 +32,9 @@ enabled = true
 # connectaddress = "udp://localhost:1212"
 
 [game]
-hostname = "[TEST SERVER][EU-W][LRP] Based Station 14"
-soft_max_players = 85
-desc = "A new server mainly in development, please join our Discord server to stay updated!: https://discord.gg/wdhuPe8hqG"
+hostname = "MyServer"
+soft_max_players = 30
+desc = "my server"
 
 [console]
 # If this is true, people connecting from this machine (loopback)
@@ -45,7 +45,7 @@ loginlocal = false
 [hub]
 # Set to true to show this server on the public server list
 # Before enabling this, read: https://docs.spacestation14.io/hosts/hub-rules
-advertise = true
+advertise = false
 # Comma-separated list of tags, useful for categorizing your server.
 # See https://docs.spacestation14.io/hosts/hub-rules for more details on this when it becomes relevant.
 tags = "lang:en,region:eu_w,LRP"
@@ -101,22 +101,3 @@ hub_urls = "https://hub.spacestation14.com/"
 # You should probably never EVER need to touch this, but if you need a custom auth server,
 # (the auth server being the one which manages Space Station 14 accounts), you change it here.
 # server = https://auth.spacestation14.com/
-
-[discord]
-# The bot token you copied earlier.
-token = "MTQwNDIwNzk2MzI1NzcwMDU0Mw.Guy6UK.xXEoGTAaf6suCbFzd0WppnhSHh__ulWRIM6kP4"
-# The ID of your Discord server. Right-click your server to be able to copy the ID.
-guild_id = "1393340554712059985"
-# A prefix that must be added to all commands interpreted by the bot.
-# This should be unique between game servers (and any other bots you may have on your Discord).
-# Note that commands are not currently used, but they will likely be added in the future.
-prefix = "!"
-# Webhook to send adminhelp messages to.
-ahelp_webhook = "https://discord.com/api/webhooks/1404320481963933766/mrt9YJU17dHBjzNPksA1SjsJoAmBO-LqlJeseyAuMT2MHImcCOoZslmc1Pd-XIHUuIZ6"
-# Webhook to send round status messages to.
-round_update_webhook = "https://discord.com/api/webhooks/1404210085424660580/Weg_vR71AqDWvNBy0wC_qhMDYNPeR7-gDnd0fQEjGjBkJZtYnT3g4HADjnL4o6exyFV-"
-# Optionally, a role ID to ping when the round has ended.
-round_end_role = "1393340554712059985"
-
-[links]
-discord = "https://discord.gg/wdhuPe8hqG"
